@@ -5226,3 +5226,1366 @@ Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2015-11-30 17:15:09 -050
 Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-11-30 17:15:09 -0500
   [1m[36mUser Load (3.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
   [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"   ORDER BY "users"."id" ASC LIMIT 1
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-01 16:45:20 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"  WHERE (released_on <= '2015-12-01 21:45:21.719754')  ORDER BY "movies"."released_on" DESC
+  Rendered movies/index.html.erb within layouts/application (97.4ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_flashes.html.erb (0.6ms)
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 592ms (Views: 563.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-01 16:45:22 -0500
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"  WHERE (released_on <= '2015-12-01 21:45:22.298785')  ORDER BY "movies"."released_on" DESC[0m
+  Rendered movies/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_flashes.html.erb (0.1ms)
+  Rendered layouts/_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 66ms (Views: 64.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2015-12-01 16:45:22 -0500
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2015-12-01 16:45:22 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-01 16:45:22 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2015-12-01 16:45:22 -0500
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2015-12-01 16:45:22 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2015-12-01 16:45:22 -0500
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2015-12-01 16:45:22 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-01 16:45:22 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-01 16:45:22 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-01 16:45:22 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-01 16:45:22 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2015-12-01 16:45:22 -0500
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2015-12-01 16:45:22 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-12-01 16:45:22 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-01 16:45:22 -0500
+
+
+Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2015-12-01 16:45:22 -0500
+
+
+Started GET "/assets/catwoman.jpg" for 127.0.0.1 at 2015-12-01 16:45:22 -0500
+
+
+Started GET "/assets/batman.jpg" for 127.0.0.1 at 2015-12-01 16:45:22 -0500
+
+
+Started GET "/assets/spiderman.jpg" for 127.0.0.1 at 2015-12-01 16:45:22 -0500
+
+
+Started GET "/assets/superman.jpg" for 127.0.0.1 at 2015-12-01 16:45:22 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-12-01 16:45:22 -0500
+
+
+Started GET "/assets/arrow.png" for 127.0.0.1 at 2015-12-01 16:45:22 -0500
+
+
+Started GET "/assets/background.jpg" for 127.0.0.1 at 2015-12-01 16:45:22 -0500
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2015-12-01 16:45:22 -0500
+
+
+Started GET "/users" for 127.0.0.1 at 2015-12-01 16:49:07 -0500
+Processing by UsersController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (5.9ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_flashes.html.erb (0.1ms)
+  Rendered layouts/_sidebar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 99ms (Views: 67.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-01 16:49:08 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2015-12-01 16:49:08 -0500
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2015-12-01 16:49:08 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2015-12-01 16:49:08 -0500
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2015-12-01 16:49:08 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2015-12-01 16:49:08 -0500
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2015-12-01 16:49:08 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-01 16:49:08 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-01 16:49:08 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-01 16:49:08 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-01 16:49:08 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2015-12-01 16:49:08 -0500
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2015-12-01 16:49:08 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-12-01 16:49:08 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-01 16:49:08 -0500
+
+
+Started GET "/users/8" for 127.0.0.1 at 2015-12-01 16:49:09 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered users/show.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_flashes.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 56ms (Views: 54.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2015-12-01 16:49:12 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_flashes.html.erb (0.1ms)
+  Rendered layouts/_sidebar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 56ms (Views: 54.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2015-12-01 16:49:15 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_flashes.html.erb (0.1ms)
+  Rendered layouts/_sidebar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 56ms (Views: 54.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-01 16:49:15 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2015-12-01 16:49:15 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2015-12-01 16:49:15 -0500
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2015-12-01 16:49:15 -0500
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2015-12-01 16:49:15 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2015-12-01 16:49:15 -0500
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2015-12-01 16:49:15 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-01 16:49:15 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-01 16:49:15 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-01 16:49:15 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-01 16:49:15 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2015-12-01 16:49:15 -0500
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2015-12-01 16:49:15 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-12-01 16:49:15 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-01 16:49:15 -0500
+
+
+Started GET "/users" for 127.0.0.1 at 2015-12-01 16:49:16 -0500
+Processing by UsersController#index as HTML
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_flashes.html.erb (0.0ms)
+  Rendered layouts/_sidebar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 64ms (Views: 63.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2015-12-01 16:49:17 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_flashes.html.erb (0.0ms)
+  Rendered layouts/_sidebar.html.erb (3.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 57ms (Views: 56.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2015-12-01 17:29:56 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_flashes.html.erb (0.1ms)
+  Rendered layouts/_sidebar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 76ms (Views: 69.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-01 17:29:56 -0500
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2015-12-01 17:29:56 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2015-12-01 17:29:56 -0500
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2015-12-01 17:29:56 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2015-12-01 17:29:56 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2015-12-01 17:29:56 -0500
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2015-12-01 17:29:56 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-01 17:29:56 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-01 17:29:56 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-01 17:29:56 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-01 17:29:56 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2015-12-01 17:29:56 -0500
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2015-12-01 17:29:56 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-12-01 17:29:56 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-01 17:29:56 -0500
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-12-01 17:29:58 -0500
+
+ActionController::RoutingError (uninitialized constant SessionsController):
+  activesupport (4.1.9) lib/active_support/inflector/methods.rb:238:in `const_get'
+  activesupport (4.1.9) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.9) lib/active_support/inflector/methods.rb:236:in `each'
+  activesupport (4.1.9) lib/active_support/inflector/methods.rb:236:in `inject'
+  activesupport (4.1.9) lib/active_support/inflector/methods.rb:236:in `constantize'
+  actionpack (4.1.9) lib/action_dispatch/routing/route_set.rb:78:in `controller_reference'
+  actionpack (4.1.9) lib/action_dispatch/routing/route_set.rb:68:in `controller'
+  actionpack (4.1.9) lib/action_dispatch/routing/route_set.rb:46:in `call'
+  actionpack (4.1.9) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.9) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.9) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.9) lib/action_dispatch/routing/route_set.rb:685:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/cookies.rb:562:in `call'
+  activerecord (4.1.9) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.9) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.9) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.9) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.9) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.9) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.9) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.9) lib/rails/engine.rb:514:in `call'
+  railties (4.1.9) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/taylorcrane/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/taylorcrane/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/taylorcrane/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/taylorcrane/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/taylorcrane/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered /Users/taylorcrane/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/routes/_table.html.erb (17.0ms)
+  Rendered /Users/taylorcrane/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (85.6ms)
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-12-01 17:29:58 -0500
+
+ActionController::RoutingError (uninitialized constant SessionsController):
+  activesupport (4.1.9) lib/active_support/inflector/methods.rb:238:in `const_get'
+  activesupport (4.1.9) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.9) lib/active_support/inflector/methods.rb:236:in `each'
+  activesupport (4.1.9) lib/active_support/inflector/methods.rb:236:in `inject'
+  activesupport (4.1.9) lib/active_support/inflector/methods.rb:236:in `constantize'
+  actionpack (4.1.9) lib/action_dispatch/routing/route_set.rb:78:in `controller_reference'
+  actionpack (4.1.9) lib/action_dispatch/routing/route_set.rb:68:in `controller'
+  actionpack (4.1.9) lib/action_dispatch/routing/route_set.rb:46:in `call'
+  actionpack (4.1.9) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.9) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.9) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.9) lib/action_dispatch/routing/route_set.rb:685:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/cookies.rb:562:in `call'
+  activerecord (4.1.9) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.9) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.9) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.9) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.9) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.9) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.9) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.9) lib/rails/engine.rb:514:in `call'
+  railties (4.1.9) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/taylorcrane/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/taylorcrane/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/taylorcrane/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/taylorcrane/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/taylorcrane/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /Users/taylorcrane/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/taylorcrane/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (59.5ms)
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-12-01 17:31:24 -0500
+Processing by SessionsController#new as HTML
+Completed 500 Internal Server Error in 14ms
+
+ActionView::MissingTemplate (Missing template sessions/new, application/new with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/taylorcrane/Desktop/Projects/rails_ii_studio/flix/app/views"
+):
+  actionview (4.1.9) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.1.9) lib/action_view/lookup_context.rb:124:in `find'
+  actionview (4.1.9) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.1.9) lib/action_view/renderer/template_renderer.rb:41:in `determine_template'
+  actionview (4.1.9) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.1.9) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.9) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.9) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.9) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.9) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.9) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.9) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.9) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.9) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.9) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.9) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/taylorcrane/.rbenv/versions/2.2.3/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.1.9) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.9) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.9) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.9) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.9) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.9) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.9) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.9) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.9) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.9) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.9) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.9) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.9) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.9) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.9) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.9) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.9) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.9) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.9) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.9) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.9) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.9) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.9) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.9) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.9) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.9) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.9) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.9) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.9) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.9) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.9) lib/action_dispatch/routing/route_set.rb:685:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/cookies.rb:562:in `call'
+  activerecord (4.1.9) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.9) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.9) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.9) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.9) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.9) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.9) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.9) lib/rails/engine.rb:514:in `call'
+  railties (4.1.9) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/taylorcrane/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/taylorcrane/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/taylorcrane/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/taylorcrane/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.4ms)
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-12-01 17:31:56 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_flashes.html.erb (0.1ms)
+  Rendered layouts/_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 316ms (Views: 315.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-01 17:31:57 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2015-12-01 17:31:57 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2015-12-01 17:31:57 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2015-12-01 17:31:57 -0500
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2015-12-01 17:31:57 -0500
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2015-12-01 17:31:57 -0500
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2015-12-01 17:31:57 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-01 17:31:57 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-01 17:31:57 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-01 17:31:57 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-01 17:31:57 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-12-01 17:31:57 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2015-12-01 17:31:57 -0500
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2015-12-01 17:31:57 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-01 17:31:57 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-12-01 17:31:57 -0500
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-12-01 17:36:32 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_flashes.html.erb (0.1ms)
+  Rendered layouts/_sidebar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 68ms (Views: 67.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2015-12-01 17:36:33 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-01 17:36:33 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2015-12-01 17:36:33 -0500
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2015-12-01 17:36:33 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2015-12-01 17:36:33 -0500
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2015-12-01 17:36:33 -0500
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2015-12-01 17:36:33 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-01 17:36:33 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-01 17:36:33 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-01 17:36:33 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-01 17:36:33 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2015-12-01 17:36:33 -0500
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2015-12-01 17:36:33 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-12-01 17:36:33 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-12-01 17:36:33 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-01 17:36:33 -0500
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-12-01 17:36:44 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_flashes.html.erb (0.0ms)
+  Rendered layouts/_sidebar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 61ms (Views: 60.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2015-12-01 17:36:45 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-01 17:36:45 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2015-12-01 17:36:45 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2015-12-01 17:36:45 -0500
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2015-12-01 17:36:45 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2015-12-01 17:36:45 -0500
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2015-12-01 17:36:45 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-01 17:36:45 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-01 17:36:45 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-01 17:36:45 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-01 17:36:45 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2015-12-01 17:36:45 -0500
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2015-12-01 17:36:45 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-12-01 17:36:45 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-01 17:36:45 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-12-01 17:36:45 -0500
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-12-01 17:36:47 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_flashes.html.erb (0.0ms)
+  Rendered layouts/_sidebar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 61ms (Views: 60.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-01 17:36:47 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2015-12-01 17:36:47 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2015-12-01 17:36:47 -0500
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2015-12-01 17:36:47 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2015-12-01 17:36:47 -0500
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2015-12-01 17:36:47 -0500
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2015-12-01 17:36:47 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-01 17:36:47 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-01 17:36:47 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-01 17:36:47 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-01 17:36:47 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2015-12-01 17:36:47 -0500
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2015-12-01 17:36:47 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-12-01 17:36:47 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-12-01 17:36:47 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-01 17:36:47 -0500
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-12-01 17:38:36 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_flashes.html.erb (0.0ms)
+  Rendered layouts/_sidebar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 59ms (Views: 58.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-01 17:38:36 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2015-12-01 17:38:36 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2015-12-01 17:38:36 -0500
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2015-12-01 17:38:36 -0500
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2015-12-01 17:38:36 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2015-12-01 17:38:36 -0500
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2015-12-01 17:38:36 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-01 17:38:36 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-01 17:38:36 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-01 17:38:36 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-01 17:38:36 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2015-12-01 17:38:36 -0500
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2015-12-01 17:38:36 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-12-01 17:38:36 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-12-01 17:38:36 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-01 17:38:36 -0500
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-12-01 17:39:17 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_flashes.html.erb (0.1ms)
+  Rendered layouts/_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 62ms (Views: 61.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-01 17:39:17 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2015-12-01 17:39:17 -0500
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2015-12-01 17:39:17 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2015-12-01 17:39:17 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2015-12-01 17:39:17 -0500
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2015-12-01 17:39:17 -0500
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2015-12-01 17:39:17 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-01 17:39:17 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-01 17:39:17 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-01 17:39:17 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-01 17:39:17 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2015-12-01 17:39:17 -0500
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2015-12-01 17:39:17 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-12-01 17:39:17 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-12-01 17:39:17 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-01 17:39:17 -0500
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-12-01 17:41:01 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_flashes.html.erb (0.0ms)
+  Rendered layouts/_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 56ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-01 17:41:01 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2015-12-01 17:41:01 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2015-12-01 17:41:01 -0500
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2015-12-01 17:41:01 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2015-12-01 17:41:01 -0500
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2015-12-01 17:41:01 -0500
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2015-12-01 17:41:01 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-01 17:41:01 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-01 17:41:01 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-01 17:41:01 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-01 17:41:01 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2015-12-01 17:41:01 -0500
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2015-12-01 17:41:01 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-12-01 17:41:01 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-12-01 17:41:01 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-01 17:41:01 -0500
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-12-01 17:41:44 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_flashes.html.erb (0.0ms)
+  Rendered layouts/_sidebar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 59ms (Views: 58.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-01 17:41:44 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2015-12-01 17:41:44 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2015-12-01 17:41:44 -0500
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2015-12-01 17:41:44 -0500
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2015-12-01 17:41:44 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2015-12-01 17:41:44 -0500
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2015-12-01 17:41:44 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-01 17:41:44 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-01 17:41:44 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-01 17:41:44 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-01 17:41:44 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2015-12-01 17:41:44 -0500
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2015-12-01 17:41:44 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-12-01 17:41:44 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-12-01 17:41:44 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-01 17:41:44 -0500
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-12-01 17:43:12 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_flashes.html.erb (0.1ms)
+  Rendered layouts/_sidebar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 56ms (Views: 55.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-01 17:43:12 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2015-12-01 17:43:12 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2015-12-01 17:43:12 -0500
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2015-12-01 17:43:12 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2015-12-01 17:43:12 -0500
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2015-12-01 17:43:12 -0500
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2015-12-01 17:43:12 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-01 17:43:12 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-01 17:43:12 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-01 17:43:12 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-01 17:43:12 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2015-12-01 17:43:12 -0500
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2015-12-01 17:43:12 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-12-01 17:43:12 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-12-01 17:43:12 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-01 17:43:12 -0500
+
+
+Started POST "/session" for 127.0.0.1 at 2015-12-01 17:43:14 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aFGIa6OK6rZJeCHKKL+0AfxFf0G13Ex/PYhrzF/yVNs=", "email"=>"", "password"=>"[FILTERED]", "commit"=>"Sign In"}
+Completed 500 Internal Server Error in 1ms
+
+RuntimeError ():
+  app/controllers/sessions_controller.rb:6:in `create'
+
+
+  Rendered /Users/taylorcrane/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/taylorcrane/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/taylorcrane/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/taylorcrane/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (58.0ms)
+
+
+Started POST "/session" for 127.0.0.1 at 2015-12-01 17:45:10 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aFGIa6OK6rZJeCHKKL+0AfxFf0G13Ex/PYhrzF/yVNs=", "email"=>"taylorkcrane@gmail.com", "password"=>"[FILTERED]", "commit"=>"Sign In"}
+Completed 500 Internal Server Error in 0ms
+
+RuntimeError ():
+  app/controllers/sessions_controller.rb:6:in `create'
+
+
+  Rendered /Users/taylorcrane/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/taylorcrane/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/taylorcrane/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/taylorcrane/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (44.0ms)
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-12-01 17:46:39 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_flashes.html.erb (0.1ms)
+  Rendered layouts/_sidebar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 62ms (Views: 61.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-01 17:46:39 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2015-12-01 17:46:39 -0500
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2015-12-01 17:46:39 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2015-12-01 17:46:39 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2015-12-01 17:46:39 -0500
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2015-12-01 17:46:39 -0500
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2015-12-01 17:46:39 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-01 17:46:39 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-01 17:46:39 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-01 17:46:39 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-01 17:46:39 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2015-12-01 17:46:39 -0500
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2015-12-01 17:46:39 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-12-01 17:46:39 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-12-01 17:46:39 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-01 17:46:39 -0500
+
+
+Started GET "/signup" for 127.0.0.1 at 2015-12-01 17:46:43 -0500
+Processing by UsersController#new as HTML
+  Rendered shared/_errors.html.erb (1.5ms)
+  Rendered users/_form.html.erb (9.3ms)
+  Rendered users/new.html.erb within layouts/application (11.0ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_flashes.html.erb (0.1ms)
+  Rendered layouts/_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 72ms (Views: 69.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-12-01 17:48:17 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_flashes.html.erb (0.1ms)
+  Rendered layouts/_sidebar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 55ms (Views: 54.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-01 17:48:17 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2015-12-01 17:48:17 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2015-12-01 17:48:17 -0500
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2015-12-01 17:48:17 -0500
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2015-12-01 17:48:17 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2015-12-01 17:48:17 -0500
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2015-12-01 17:48:17 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-01 17:48:17 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-01 17:48:17 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-01 17:48:17 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-01 17:48:17 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2015-12-01 17:48:17 -0500
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2015-12-01 17:48:17 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-12-01 17:48:17 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-12-01 17:48:17 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-01 17:48:17 -0500
+
+
+Started POST "/session" for 127.0.0.1 at 2015-12-01 17:48:34 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aFGIa6OK6rZJeCHKKL+0AfxFf0G13Ex/PYhrzF/yVNs=", "email"=>"s@s.com", "password"=>"[FILTERED]", "commit"=>"Sign In"}
+Completed 500 Internal Server Error in 1ms
+
+RuntimeError ():
+  app/controllers/sessions_controller.rb:6:in `create'
+
+
+  Rendered /Users/taylorcrane/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/taylorcrane/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/taylorcrane/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/taylorcrane/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (49.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-01 17:48:56 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2015-12-01 17:48:56 -0500
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2015-12-01 17:48:56 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2015-12-01 17:48:56 -0500
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2015-12-01 17:48:56 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2015-12-01 17:48:56 -0500
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2015-12-01 17:48:56 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-01 17:48:56 -0500
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-12-01 17:51:40 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (4.0ms)
+  Rendered layouts/_flashes.html.erb (0.1ms)
+  Rendered layouts/_sidebar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 82ms (Views: 81.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-01 17:51:40 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2015-12-01 17:51:40 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2015-12-01 17:51:40 -0500
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2015-12-01 17:51:40 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2015-12-01 17:51:40 -0500
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2015-12-01 17:51:40 -0500
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2015-12-01 17:51:40 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-01 17:51:40 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-01 17:51:40 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-01 17:51:40 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-01 17:51:40 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2015-12-01 17:51:40 -0500
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2015-12-01 17:51:40 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-12-01 17:51:40 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-12-01 17:51:40 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-01 17:51:40 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-01 17:51:41 -0500
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies"  WHERE (released_on <= '2015-12-01 22:51:41.137179')  ORDER BY "movies"."released_on" DESC[0m
+  Rendered movies/index.html.erb within layouts/application (10.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_flashes.html.erb (0.1ms)
+  Rendered layouts/_sidebar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 75ms (Views: 71.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2015-12-01 17:51:41 -0500
+
+
+Started GET "/assets/catwoman.jpg" for 127.0.0.1 at 2015-12-01 17:51:41 -0500
+
+
+Started GET "/assets/batman.jpg" for 127.0.0.1 at 2015-12-01 17:51:41 -0500
+
+
+Started GET "/assets/superman.jpg" for 127.0.0.1 at 2015-12-01 17:51:41 -0500
+
+
+Started GET "/assets/spiderman.jpg" for 127.0.0.1 at 2015-12-01 17:51:41 -0500
+
+
+Started GET "/signin" for 127.0.0.1 at 2015-12-01 17:51:42 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_flashes.html.erb (0.1ms)
+  Rendered layouts/_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 61ms (Views: 60.4ms | ActiveRecord: 0.0ms)
