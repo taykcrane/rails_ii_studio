@@ -1,10 +1,14 @@
 require 'spec_helper'
 
 describe "Deleting a user" do
-it "destroys the user and redirects to the home page" do
-    user = User.create!(user_attributes)
 
-    sign_in(user)
+  before do
+  	admin = User.create!(user_attributes(admin: true))
+  	sign_in(admin)
+  end
+
+  it "destroys the user and redirects to the home page" do
+    user = User.create!(user_attributes(name: "Some Name", username: "somename", email: "example2@gmail.com"))
 
     visit user_path(user)
 
