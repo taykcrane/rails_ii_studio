@@ -4,6 +4,29 @@
     <h1><%= @user.name %></h1>
     <h2><%= mail_to(@user.email) %></h2>
     <p>Username: <%= @user.username %></p>
+    <% if @favorite_movies.any? %>
+      <h3>Favorite Movies</h3>
+      <ul>
+        <% @favorite_movies.each do |movie| %>
+          <li><%= link_to movie.title, movie_path(movie) %></li>
+        <% end %>
+      </ul>
+    <% end %>
+    <% if @reviews.any? %>
+      <h3>Reviews</h3>
+      <ol id="reviews">
+       <% @reviews.each do |review| %>
+         <li>
+           <%= link_to review.movie.title, review.movie %>
+           <span class="review"><%= pluralize(review.stars, 'star') %></span>
+           <span class="date"><%= time_ago_in_words(review.created_at) %> ago</span>
+           <p>
+             &quot;<%= review.comment %>&quot;
+           </p>
+         </li>
+       <% end %>
+      </ol>
+    <% end %>
     <p>Member since: <%= @user.created_at.strftime("%B %Y")  %></p>
   </header>
 </article>
