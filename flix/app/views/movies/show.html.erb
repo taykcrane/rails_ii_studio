@@ -12,6 +12,14 @@
   <h3 class="no-rule">
     <%= @movie.rating %> &bull; <%= @movie.duration %> 
   </h3>
+  <% if @genres.size > 0 %>
+    <h3 class="no-rule">Genres</h3>
+    <ul>
+      <% @genres.each do |genre| %>
+        <li><%= link_to genre.name, genre_path(genre) %></li>
+      <% end %>
+    </ul>
+  <% end %>
   
   <h3><%= pluralize(@fans.size, "fan") %></h3>
   <ul>
