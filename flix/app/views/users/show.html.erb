@@ -1,17 +1,12 @@
+<% content_for :title, @user.name %>
+
 <article id="user">
   <header>
     <%= profile_image_for(@user) %>
     <h1><%= @user.name %></h1>
     <h2><%= mail_to(@user.email) %></h2>
     <p>Username: <%= @user.username %></p>
-    <% if @favorite_movies.any? %>
-      <h3>Favorite Movies</h3>
-      <ul>
-        <% @favorite_movies.each do |movie| %>
-          <li><%= link_to movie.title, movie_path(movie) %></li>
-        <% end %>
-      </ul>
-    <% end %>
+  
     <% if @reviews.any? %>
       <h3>Reviews</h3>
       <ol id="reviews">
@@ -40,3 +35,14 @@
     <% end %>
 	</nav>
 </footer>
+
+<% content_for :side do %>
+  <% if @favorite_movies.any? %>
+    <h3>Favorite Movies</h3>
+    <ul>
+      <% @favorite_movies.each do |movie| %>
+        <li><%= link_to movie.title, movie_path(movie) %></li>
+      <% end %>
+    </ul>
+  <% end %>
+<% end %>

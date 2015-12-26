@@ -1,3 +1,5 @@
+<% content_for :title, "#{@movie.title} (#{@movie.released_on.year})" %>
+
 <article id="movie" class="movie">
   <header>
     <%= image_for(@movie) %>
@@ -12,25 +14,7 @@
   <h3 class="no-rule">
     <%= @movie.rating %> &bull; <%= @movie.duration %> 
   </h3>
-  <% if @genres.size > 0 %>
-    <h3 class="no-rule">Genres</h3>
-    <ul>
-      <% @genres.each do |genre| %>
-        <li><%= link_to genre.name, genre_path(genre) %></li>
-      <% end %>
-    </ul>
-  <% end %>
-  
-  <h3><%= pluralize(@fans.size, "fan") %></h3>
-  <ul>
-    <% @fans.each do |user| %>
-      <li>
-        <%= link_to user.name, user_path(user) %>
-      </li>
-    <% end %>
-  </ul>
 
-  <h3><%= pluralize(@movie.favorites.size, "favorite") %></h3>
   <% if current_user %>
     <% if @current_favorite %>
       <%= button_to "Unfave", movie_favorite_path(@movie, @current_favorite), method: :delete, class: "button unfave" %>
@@ -78,3 +62,24 @@
     <% end %>
   </footer>
 </article>
+
+
+<% content_for :side do %>
+    <% if @genres.size > 0 %>
+      <h3 class="no-rule">Genres</h3>
+      <ul>
+        <% @genres.each do |genre| %>
+          <li><%= link_to genre.name, genre_path(genre) %></li>
+        <% end %>
+      </ul>
+    <% end %>
+
+    <h3><%= pluralize(@fans.size, "fan") %></h3>
+    <ul>
+      <% @fans.each do |user| %>
+        <li>
+          <%= link_to user.name, user_path(user) %>
+        </li>
+      <% end %>
+    </ul>
+<% end %>

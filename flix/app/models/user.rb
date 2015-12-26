@@ -9,6 +9,9 @@ class User < ActiveRecord::Base
   validates :email, presence: true, format: /\A\S+@\S+\z/, uniqueness: {case_sensitive: false}
   validates :password, length: {minimum: 4, allow_blank: true}
 
+  scope :by_name, -> {order(:name)}
+  scope :not_admins, -> {by_name.where(admin: false)}
+
   def gravatar_id
   	Digest::MD5::hexdigest(email.downcase)
   end
