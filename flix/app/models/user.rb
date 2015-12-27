@@ -4,6 +4,8 @@ class User < ActiveRecord::Base
   has_many :favorites, dependent: :destroy
   has_many :favorite_movies, through: :favorites, source: :movie
 
+  before_save :username_downcase
+
   validates :name, presence: true
   validates :username, presence: true, format: /\A[a-zA-Z0-9]+\z/i, uniqueness: {case_sensitive: false}
   validates :email, presence: true, format: /\A\S+@\S+\z/, uniqueness: {case_sensitive: false}
@@ -19,5 +21,13 @@ class User < ActiveRecord::Base
   def self.authenticate(email, password)
   	user = User.find_by(email: email)
   	user && user.authenticate(password)
+  end
+
+  def username_downcase
+    self.username = username.downcase
+  end
+
+  def to_param
+    username
   end
 end

@@ -6,7 +6,11 @@ class Movie < ActiveRecord::Base
   has_many :characterizations, dependent: :destroy
   has_many :genres, through: :characterizations
 
-  validates :title, presence: true
+  before_validation :generate_slug
+
+  validates :title, presence: true, uniqueness: true
+
+  validates :slug, uniqueness: true
   
   validates :released_on, :duration, presence: true
   
@@ -38,5 +42,13 @@ class Movie < ActiveRecord::Base
   
   def average_stars
     reviews.average(:stars)
+  end
+
+  def generate_slug
+    self.slug ||= title.parameterize if title
+  end
+
+  def to_param
+    slug
   end
 end

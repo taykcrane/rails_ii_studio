@@ -6,4 +6,12 @@ module ApplicationHelper
 			"Flix"
 		end
 	end
+
+	def nav_link_to(text, path)
+		classes = ["button"]
+		if current_page?(path)
+			classes << "active"
+		end
+		link_to text, path, class: classes.join(" ")
+	end
 end
